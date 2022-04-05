@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="5" thread-count="10"> <!-- Название списка -->
+    <test name="Class" ><!-- Название теста -->
+        <classes>
+            <class name="Ex2Test" /> <!-- Название класса что мы хотим запустить -->
+            <class name="advanced.HW5Test"/> <!-- Название класса и пути к нему что мы хотим запустить -->
+        </classes>
+    </test>
+
+    <test name="Package">
+        <packages>
+            <package name="advanced" /><!-- Название пакета что мы хотим запустить -->
+        </packages>
+    </test>
+
+    <test name="Methods">
+        <classes>
+            <class name="advanced.HW5Test"><!-- Название класса что мы хотим запустить -->
+                <methods>
+                    <include name="testSubtraction" /> <!-- Название метода что мы хотим запустить -->
+                    <include name="testMultiplication" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Methods + Class" preserve-order="false">
+        <classes>
+            <class name="advanced.HW5Test"><!-- Название класса что мы хотим запустить -->
+                <methods>
+                    <include name="testSubtraction" /> <!-- Название метода что мы хотим запустить -->
+                    <include name="testMultiplication" />
+                </methods>
+            </class>
+
+            <class name="advanced.Hw4_2Test"/>
+        </classes>
+
+    </test>
+
+
+</suite>

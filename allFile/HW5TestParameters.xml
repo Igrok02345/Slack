@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParametersTest">
+    <parameter name="first" value="10"/>
+    <parameter name="second" value="20"/>
+    <parameter name="expected" value="30"/>
+    <parameter name="message" value="Well done"/>
+    <test name="Class">
+        <classes>
+            <class name="advanced.HW5TestParameters"></class>
+        </classes>
+    </test>
+</suite>
